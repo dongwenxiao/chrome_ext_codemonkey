@@ -10,9 +10,9 @@
 	// 图标，一般偷懒全部用一个尺寸的也没问题
 	"icons":
 	{
-		"16": "img/icon.png",
-		"48": "img/icon.png",
-		"128": "img/icon.png"
+		"16": "img/me.png",
+		"48": "img/me.png",
+		"128": "img/me.png"
 	},
 	// 会一直常驻的后台JS或后台页面
 	"background":
@@ -24,7 +24,7 @@
 	// 浏览器右上角图标设置，browser_action、page_action、app必须三选一
 	"browser_action": 
 	{
-		"default_icon": "img/icon.png",
+		"default_icon": "img/me.png",
 		// 图标悬停时的标题，可选
 		"default_title": "Codemonkey Chrome Plugin",
 		"default_popup": "popup.html"
@@ -44,7 +44,12 @@
 			// "<all_urls>" 表示匹配所有地址
 			"matches": ["<all_urls>"],
 			// 多个JS按顺序注入
-			"js": ["js/jquery-1.8.3.js", "js/enum.js", "js/content-script.js"],
+			"js": [
+				"js/jquery-1.8.3.js", 
+				"js/enum.js", 
+				"js/content-script.js",
+				"js/tasks/JJ_AUTO_TASK_1.js"
+			],
 			// JS的注入可以随便一点，但是CSS的注意就要千万小心了，因为一不小心就可能影响全局样式
 			"css": ["css/content-style.css"],
 			// 代码注入的时间，可选值： "document_start", "document_end", or "document_idle"，最后一个表示页面空闲时，默认document_idle

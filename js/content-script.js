@@ -13,9 +13,13 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
 function handler(cmd, data) {
 
     if (cmd === ENUM.JJ_AUTO_TASK_1) {
-        $("body").css({
-            background: 'red'
-        })
+        // $("body").css({
+        //     background: 'red'
+        // })
+
+        var number = $("#zhaimenNum1").html();
+
+        JJ_AUTO_TASK_1(number)
     }
 
 }
