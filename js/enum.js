@@ -1,0 +1,3 @@
+var ENUM = {
+    JJ_AUTO_TASK_1: 'JJ_AUTO_TASK_1'
+}
