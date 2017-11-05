@@ -22,4 +22,14 @@ function handler(cmd, data) {
         JJ_AUTO_TASK_1(number)
     }
 
+    if (cmd === ENUM.LIU_AUTO_TASK_1) {
+        // $("body").css({
+        //     background: 'red'
+        // })
+
+        var number1 = $("#zhaimenNum1").html();
+
+        LIU_AUTO_TASK_1(number1)
+    }
+
 }

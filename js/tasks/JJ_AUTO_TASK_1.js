@@ -1,3 +1,7 @@
+// http://139.224.52.12:8088/jymj-zjw/ylhuji/saveHuji
+// User:bygc
+// PWD:bygc
+
 ;
 var JJ_AUTO_TASK_1_index = 0;
 
@@ -697,6 +701,10 @@ function JJ_AUTO_TASK_1(num) {
             if (r.indexOf('妻') > -1) return 2
             if (r.indexOf('外孙子') > -1) return 13
             if (r.indexOf('孙子') > -1) return 10
+            if (r.indexOf('岳母') > -1) return 15
+            if (r.indexOf('岳父') > -1) return 16
+            if (r.indexOf('媳妇') > -1) return 8
+            if (r.indexOf('媳') > -1) return 8
             if (r.indexOf('子') > -1) return 6
             if (r.indexOf('外孙女') > -1) return 14
             if (r.indexOf('孙女') > -1) return 9
@@ -705,9 +713,6 @@ function JJ_AUTO_TASK_1(num) {
             if (r.indexOf('父') > -1) return 4
             if (r.indexOf('妹') > -1) return 12
             if (r.indexOf('兄') > -1) return 11
-            if (r.indexOf('岳母') > -1) return 15
-            if (r.indexOf('岳父') > -1) return 16
-            if (r.indexOf('媳妇') > -1) return 8
             if (r.indexOf('夫') > -1) return 3
 
             return 0

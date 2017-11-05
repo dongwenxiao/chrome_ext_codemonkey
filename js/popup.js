@@ -10,6 +10,17 @@ $(function() {
             console.log('done.')
         });
     });
+
+    $("#btnLIUAutoTask1").click(function(e) {
+        sendMessageToContentScript({
+            cmd: ENUM.LIU_AUTO_TASK_1,
+            data: {}
+        }, function(response) {
+            console.log('done.')
+        });
+    });
+
+    
 })
 
 
