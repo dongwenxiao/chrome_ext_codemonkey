@@ -11,6 +11,15 @@ $(function() {
         });
     });
 
+    $("#btnJJAutoTask2").click(function(e) {
+        sendMessageToContentScript({
+            cmd: ENUM.JJ_AUTO_TASK_2,
+            data: {}
+        }, function(response) {
+            console.log('done.')
+        });
+    });
+
     $("#btnLIUAutoTask1").click(function(e) {
         sendMessageToContentScript({
             cmd: ENUM.LIU_AUTO_TASK_1,

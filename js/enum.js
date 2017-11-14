@@ -1,4 +1,5 @@
 var ENUM = {
     JJ_AUTO_TASK_1: 'JJ_AUTO_TASK_1',
+    JJ_AUTO_TASK_2: 'JJ_AUTO_TASK_2',
     LIU_AUTO_TASK_1: 'LIU_AUTO_TASK_1',
 }

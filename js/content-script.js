@@ -22,6 +22,16 @@ function handler(cmd, data) {
         JJ_AUTO_TASK_1(number)
     }
 
+    if (cmd === ENUM.JJ_AUTO_TASK_2) {
+        // $("body").css({
+        //     background: 'red'
+        // })
+
+        var number2 = $("#zhaimenNum1").html();
+
+        JJ_AUTO_TASK_2(number2)
+    }
+
     if (cmd === ENUM.LIU_AUTO_TASK_1) {
         // $("body").css({
         //     background: 'red'
