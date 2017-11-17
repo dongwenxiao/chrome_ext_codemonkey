@@ -404,7 +404,7 @@ function JJ_AUTO_TASK_2(num) {
         // 户口迁移情况
         // $("#texthousemove").val()
 
-        // 户别  1农户
-        $("#texthuType").val(1);
+        // 户别  1农户 2非农
+        $("#texthuType").val(2);
     }
 }
