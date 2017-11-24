@@ -29,6 +29,15 @@ $(function() {
         });
     });
 
+    $("#btn10Ranks").click(function(e) {
+        sendMessageToContentScript({
+            cmd: ENUM.CM_ARTICLES_RANK_10,
+            data: {}
+        }, function(response) {
+            console.log('done.')
+        });
+    });
+
     
 })
 

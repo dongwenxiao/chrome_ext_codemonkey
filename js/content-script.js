@@ -10,7 +10,7 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
 });
 
 // 处理方法
-function handler(cmd, data) {
+async function handler(cmd, data) {
 
     if (cmd === ENUM.JJ_AUTO_TASK_1) {
         // $("body").css({
@@ -42,4 +42,12 @@ function handler(cmd, data) {
         LIU_AUTO_TASK_1(number1)
     }
 
+    if (cmd === ENUM.CM_ARTICLES_RANK_10) {
+
+        await getLinks()
+
+    }
+
 }
+
+

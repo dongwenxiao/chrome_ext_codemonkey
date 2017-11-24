@@ -50,7 +50,8 @@
 				"js/content-script.js",
 				"js/tasks/JJ_AUTO_TASK_1.js",
 				"js/tasks/JJ_AUTO_TASK_2.js",
-				"js/tasks/LIU_AUTO_TASK_1.js"
+				"js/tasks/LIU_AUTO_TASK_1.js",
+				"js/tasks/articles_10_ranks.js"
 			],
 			// JS的注入可以随便一点，但是CSS的注意就要千万小心了，因为一不小心就可能影响全局样式
 			"css": ["css/content-style.css"],
