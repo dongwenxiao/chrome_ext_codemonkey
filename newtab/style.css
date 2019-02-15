@@ -1,0 +1,251 @@
+:root {
+    --navHeight: 80px;
+    --deepBlue: #0e1c2b;
+    --darkBlue: #223548;
+    --lightBlue: #52647a;
+}
+
+html,
+body {
+    overflow: hidden;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: var(--navHeight);
+    background: var(--darkBlue);
+}
+
+nav .left,
+nav .middle,
+nav .right {
+    float: left;
+    height: var(--navHeight);
+}
+
+nav .left {
+    width: 80px;
+    border-right: 1px solid var(--lightBlue);
+}
+
+nav .left .logo {
+    margin: 15px;
+    display: block;
+    background-image: url(/newtab/img/logo.jpg);
+    background-position: 0 0;
+    background-size: 100% 100%;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid #eee;
+    box-sizing: border-box;
+}
+
+nav .middle {
+    position: relative;
+    flex: auto;
+}
+
+nav .middle .search {
+    --marginTop: 10px;
+    position: absolute;
+    top: var(--marginTop);
+    left: 50%;
+    margin-left: -40%;
+    padding: 0 0 0 17px;
+    width: 80%;
+    height: calc(var(--navHeight) - (var(--marginTop) * 2));
+    border: 0px;
+    background-color: var(--lightBlue);
+    color: #eee;
+    font-size: 18px;
+}
+
+nav .middle .search::placeholder {
+    color: #eee!important
+}
+
+nav .right {
+    width: 80px;
+    border-left: 1px solid var(--lightBlue);
+}
+
+nav .right .setting {
+    margin: 25px;
+    display: block;
+    background-image: url(/newtab/img/setting.svg);
+    background-position: 0 0;
+    background-size: 100% 100%;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.landscape {
+    position: relative;
+    left: 0;
+    overflow: hidden;
+    height: calc(100vh - 5px);
+    background: var(--deepBlue);
+    z-index: -1;
+}
+
+.moon {
+    position: absolute;
+    left: 56%;
+    bottom: 90px;
+    width: 350px;
+    height: 350px;
+    margin: 0 0 0 -50px;
+    border-radius: 50%;
+    background: #ccc;
+    animation-name: moon-move;
+    animation-duration: 6s;
+}
+
+.moon::after {
+    top: 90px;
+    left: 100px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, .0980392) 120px 80px 0, rgba(0, 0, 0, .0980392) 100px -60px 0 -20px, rgba(0, 0, 0, .0980392) -70px 40px 0 -20px, rgba(0, 0, 0, .0980392) -20px -50px 0 -15px, rgba(0, 0, 0, .0980392) -20px 120px 0 -15px, rgba(0, 0, 0, .0980392) 50px 50px 0 -15px;
+    background: rgba(0, 0, 0, .0980392)
+}
+
+@keyframes moon-move {
+    0% {
+        bottom: -250px
+    }
+    100% {
+        bottom: 90px
+    }
+}
+
+.tree {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    margin: 0 0 0 -742px
+}
+
+.tree div {
+    position: relative;
+    float: left;
+    display: block;
+    width: 6px;
+    height: 8px;
+    margin: 0 30px -5px 0;
+    background: #eee
+}
+
+.tree div::before {
+    bottom: 8px;
+    border-style: solid;
+    border-color: transparent transparent #eee;
+    content: ' ';
+    height: 0;
+    width: 0;
+    position: absolute;
+    border-width: 12px;
+    left: 50%;
+    margin-left: -12px
+}
+
+.tree div::after {
+    bottom: 15px;
+    border-style: solid;
+    border-color: transparent transparent #eee;
+    content: ' ';
+    height: 0;
+    width: 0;
+    position: absolute;
+    border-width: 10px;
+    left: 50%;
+    margin-left: -10px
+}
+
+.tree div span::before {
+    bottom: 22px;
+    border-style: solid;
+    border-color: transparent transparent #eee;
+    content: ' ';
+    height: 0;
+    width: 0;
+    position: absolute;
+    border-width: 8px;
+    left: 50%;
+    margin-left: -8px
+}
+
+.tree div span::after {
+    bottom: 28px;
+    border-style: solid;
+    border-color: transparent transparent #eee;
+    content: ' ';
+    height: 0;
+    width: 0;
+    position: absolute;
+    border-width: 6px;
+    left: 50%;
+    margin-left: -6px
+}
+
+.hills {
+    position: absolute;
+    left: 50%;
+    bottom: 0
+}
+
+.hills div {
+    overflow: hidden;
+    border-radius: 8%;
+    transform: rotate(45deg)
+}
+
+.hills div:nth-child(1),
+.hills div:nth-child(2),
+.hills div:nth-child(3) {
+    position: absolute;
+    bottom: -350px;
+    width: 500px;
+    height: 500px;
+    background: #223548
+}
+
+.hills div:nth-child(1) {
+    left: -750px
+}
+
+.hills div:nth-child(2) {
+    left: -250px
+}
+
+.hills div:nth-child(3) {
+    left: 250px
+}
+
+.hills div:nth-child(4),
+.hills div:nth-child(5) {
+    position: absolute;
+    bottom: -400px;
+    left: -600px;
+    width: 500px;
+    height: 500px;
+    background: #506479
+}
+
+.hills div:nth-child(4) {
+    left: -500px
+}
+
+.hills div:nth-child(5) {
+    left: 0
+}
