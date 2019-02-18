@@ -249,3 +249,68 @@ nav .right .setting {
 .hills div:nth-child(5) {
     left: 0
 }
+
+.topsites {
+    position: absolute;
+    top: 100px;
+    right: 50px;
+}
+
+.site-link {
+    /* padding: 11px 40px 11px 0; */
+    width: 100%;
+    height: 42px;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 300px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 0;
+    border-bottom: .5px solid #0e1c2b;
+}
+
+.site-icon {
+    float: left;
+    width: 42px;
+    height: 41px;
+    background-color: #ddd;
+    border: 5px solid #f8f8ff;
+    box-sizing: border-box;
+    filter: sepia(1) hue-rotate(180deg);
+}
+
+.site-txt {
+    float: left;
+    padding: 15px;
+    width: 258px;
+    height: 42px;
+    box-sizing: border-box;
+    color: #ddd;
+}
+
+.panel {
+    width: 300px;
+    text-decoration: none;
+    font-size: 14px;
+    color: #ddd;
+    background: #2e435a;
+}
+
+.panel-head {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: #ddd;
+    background-color: #223548;
+    border: none;
+    font-size: 1.4em;
+    text-align: center;
+}
+
+.panel-body {
+    width: 100%;
+}
+

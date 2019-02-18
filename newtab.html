@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>董文枭's Tab</title>
-    <link rel="stylesheet" href="/newtab/reset.css">
-    <link rel="stylesheet" href="/newtab/style.css">
+    <link rel="stylesheet" href="/newtab/css/reset.css">
+    <link rel="stylesheet" href="/newtab/css/style.css">
+    <link rel="stylesheet" href="/newtab/css/clock.css">
 </head>
 
 <body id="root">
@@ -25,145 +26,18 @@
         </nav>
     </header>
 
-
     <div class="playground">
+        <div id="ticks" class="clock floral-white"> </div>
+        <div class="topsites panel">
+            <div class="panel-head">Top Sites</div>
+            <div class="panel-body">
+                <ul id="topsites"> </ul>
+            </div>
+        </div>
         <div class="landscape">
             <div class="moon"></div>
-            <div class="hills">
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-            <div class="tree">
-                <div>
-                    <span></span>
-                </div>
-                <div>
-                    <span></span>
-                </div>
-                <div>
-                    <span></span>
-                </div>
-                <div>
-                    <span></span>
-                </div>
-                <div>
-                    <span></span>
-                </div>
-                <div>
-                    <span></span>
-                </div>
-                <div>
-                    <span></span>
-                </div>
-                <div>
-                    <span></span>
-                </div>
-                <div>
-                    <span></span>
-                </div>
-                <div>
-                    <span></span>
-                </div>
-                <div>
-                    <span></span>
-                </div>
-                <div>
-                    <span></span>
-                </div>
-                <div>
-                    <span></span>
-                </div>
-                <div>
-                    <span></span>
-                </div>
-                <div>
-                    <span></span>
-                </div>
-                <div>
-                    <span></span>
-                </div>
-                <div>
-                    <span></span>
-                </div>
-                <div>
-                    <span></span>
-                </div>
-                <div>
-                    <span></span>
-                </div>
-                <div>
-                    <span></span>
-                </div>
-                <div>
-                    <span></span>
-                </div>
-                <div>
-                    <span></span>
-                </div>
-                <div>
-                    <span></span>
-                </div>
-                <div>
-                    <span></span>
-                </div>
-                <div>
-                    <span></span>
-                </div>
-                <div>
-                    <span></span>
-                </div>
-                <div>
-                    <span></span>
-                </div>
-                <div>
-                    <span></span>
-                </div>
-                <div>
-                    <span></span>
-                </div>
-                <div>
-                    <span></span>
-                </div>
-                <div>
-                    <span></span>
-                </div>
-                <div>
-                    <span></span>
-                </div>
-                <div>
-                    <span></span>
-                </div>
-                <div>
-                    <span></span>
-                </div>
-                <div>
-                    <span></span>
-                </div>
-                <div>
-                    <span></span>
-                </div>
-                <div>
-                    <span></span>
-                </div>
-                <div>
-                    <span></span>
-                </div>
-                <div>
-                    <span></span>
-                </div>
-                <div>
-                    <span></span>
-                </div>
-                <div>
-                    <span></span>
-                </div>
-                <div>
-                    <span></span>
-                </div>
-            </div>
+            <div id="hills" class="hills"> </div>
+            <div id="tress" class="tree"> </div>
             <canvas class="snow" id="cvs"></canvas>
         </div>
     </div>
@@ -175,3 +49,4 @@
 <script src="/newtab/js/script.js"></script>
 <script src="/newtab/js/snow.js"></script>
 <script src="/newtab/js/anycall.js"></script>
+<script src="/newtab/js/clock.js"></script>
