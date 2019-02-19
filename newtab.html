@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="/newtab/css/reset.css">
     <link rel="stylesheet" href="/newtab/css/style.css">
     <link rel="stylesheet" href="/newtab/css/clock.css">
+    <link rel="stylesheet" href="/newtab/css/progressbar.css">
 </head>
 
 <body id="root">
@@ -28,6 +29,38 @@
 
     <div class="playground">
         <div id="ticks" class="clock floral-white"> </div>
+        <div class="life-passed">
+            
+            <div class="year-passed">
+                <div class="progress">
+                    <b class="progress__bar">
+                      <span class="progress__text">
+                        Year: <em>0%</em>
+                      </span>
+                    </b>
+                </div>
+            </div>
+
+            <div class="month-passed">
+                <div class="progress">
+                    <b class="progress__bar">
+                      <span class="progress__text">
+                        Month: <em>0%</em>
+                      </span>
+                    </b>
+                </div>
+            </div>
+
+            <div class="day-passed">
+                <div class="progress">
+                    <b class="progress__bar">
+                      <span class="progress__text">
+                        Day: <em>0%</em>
+                      </span>
+                    </b>
+                </div>
+            </div>
+        </div>
         <div class="topsites panel">
             <div class="panel-head">Top Sites</div>
             <div class="panel-body">
@@ -46,7 +79,9 @@
 
 </html>
 <script src="/newtab/js/jquery-1.8.3.js"></script>
+<script src="/newtab/js/moment.js"></script>
 <script src="/newtab/js/script.js"></script>
 <script src="/newtab/js/snow.js"></script>
 <script src="/newtab/js/anycall.js"></script>
 <script src="/newtab/js/clock.js"></script>
+<script src="/newtab/js/progressbar.js"></script>

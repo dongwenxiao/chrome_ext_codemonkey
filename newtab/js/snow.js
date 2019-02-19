@@ -56,8 +56,6 @@
             window.onresize = function() {
                 height = canvas.height = document.body.offsetHeight,
                     width = canvas.width = document.body.offsetWidth;
-
-                console.log(width, height)
             }
     }
     window.requestAnimFrame = window.requestAnimationFrame || window.webkitRequestAnimationFrame || window.mozRequestAnimationFrame || window.oRequestAnimationFrame || window.msRequestAnimationFrame || function(t) {
