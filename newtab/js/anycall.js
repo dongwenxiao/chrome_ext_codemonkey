@@ -61,6 +61,7 @@ const robot = {
             analyze: (query) => {
                 const words = [
                     "github",
+                    "followers",
                     "my followers",
                     "github followers"
                 ]
