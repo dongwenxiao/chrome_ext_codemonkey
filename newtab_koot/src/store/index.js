@@ -1,5 +1,7 @@
 import { createStore, combineReducers, applyMiddleware } from 'redux'
 import { reduxForCreateStore } from 'koot'
+import { createReduxModuleStore } from 'koot-redux';
+import rootModule from './module';
 import logger from 'redux-logger'
 
 const middlewares = [
@@ -8,6 +10,9 @@ const middlewares = [
 if( __CLIENT__ && __DEV__ ){
     middlewares.push(logger)
 }
+
+
+
 
 /**
  * 创建 Redux store 的方法
@@ -19,12 +24,15 @@ export default () => {
         reducers: defaultReducers, initialState
     } = reduxForCreateStore
 
-    return createStore(
-        combineReducers({
-            ...defaultReducers,
-            // ...reducers
-        }),
-        initialState,
-        applyMiddleware(...middlewares)
-    )
+    const store = createReduxModuleStore(rootModule, initialState)
+    return store
+
+    // return createStore(
+    //     combineReducers({
+    //         ...defaultReducers,
+    //         // ...reducers
+    //     }),
+    //     initialState,
+    //     applyMiddleware(...middlewares)
+    // )
 }
